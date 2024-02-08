@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExplorarX</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./lib/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&family=Protest+Riot&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- Navbar com fundo escuro, fixa no topo da página -->
+    <nav class="navbar">
+      <!-- Container Bootstrap para alinhar o conteúdo da barra de navegação -->
+      <div class="container">
+        <!-- Marca da navbar (logotipo ou texto) -->
+        <a class="navbar-brand tittle-site" href="/">ExplorarX</a>
+
+        <!-- Botão de alternância para o offcanvas, oculto em telas médias e grandes -->
+        <button class="navbar-toggler d-md-none btn-light" type="button " data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-primary "></span>
+        </button>
+
+        <!-- Botões de navegação em tela grande -->
+        <div class="d-none d-md-block">
+          <!-- Adicione os botões de navegação aqui -->
+          <ul class="nav nav-pills d-flex">
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#exploracao">Explorações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Offcanvas para navegação em telas pequenas -->
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <!-- Cabeçalho do offcanvas -->
+          <div class="offcanvas-header">
+            <!-- Título do offcanvas -->
+            <h5 class="offcanvas-title tittle-site" id="offcanvasDarkNavbarLabel">ExplorarX</h5>
+            <!-- Botão de fechar o offcanvas -->
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <!-- Corpo do offcanvas, contendo a lista de navegação -->
+          <div class="offcanvas-body">
+            <!-- Lista de navegação com alinhamento à esquerda usando me-auto -->
+            <ul class="navbar-nav">
+              <!-- Item da lista para a página ativa (Home) -->
+              <li class="nav-item ">
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+              </li>
+              <!-- Item da lista para a página "Sobre" -->
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">Sobre</a>
+              </li>
+              <!-- Item da lista para a página "Cardápio" -->
+              <li class="nav-item">
+                <a class="nav-link" href="#exploracao">Explorações</a>
+              </li>
+              <!-- Item da lista para a página "Contato" -->
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  </header>
+
+  <section>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/marte.png" class="d-block w-100" alt="moon">
+          <div class="carousel-caption ">
+            <div class="conteudo-intro">
+              <h2>imaginação Cósmica</h2>
+              <p>
+                "Explore o cosmos da sua imaginação. Deixe-se levar pelas estrelas, descubra mundos desconhecidos e embarque em uma jornada intergaláctica. O espaço está esperando por você."</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/earth2.jpg" class="d-block w-100 " alt="planet">
+          <div class="carousel-caption">
+            <div class="conteudo-intro">
+              <h2>Horizontes Inexplorados</h2>
+              <p>
+                "Viaje além dos limites da Terra. Desvende mistérios cósmicos, mergulhe na vastidão do universo e descubra a magia que só o espaço pode oferecer. Sua jornada estelar começa aqui."</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/moon2.jpg" class="d-block w-100 h-50" alt="moon2">
+          <div class="carousel-caption">
+            <div class="conteudo-intro">
+              <h2>Desbravando Fronteiras</h2>
+              <p>
+                "Desbrave o desconhecido. Deixe-se envolver pela vastidão estelar, explore novos horizontes e sonhe alto. Para aqueles que têm o coração no espaço, a aventura é interminável."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="bg" id="sobre">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <img src="./img/satelite.jpg" alt="satelite" class="satelite">
+        </div>
+        <div class="col-sm sobre">
+          <h3 class="fw-bold">Quem Somos?</h3>
+          <p>A <strong>ExplorarX</strong> é uma empresa visionária no campo da exploração espacial, impulsionando os limites do conhecimento humano e expandindo as fronteiras do universo. Fundada por uma equipe de cientistas, engenheiros e empreendedores apaixonados pela exploração cósmica, a ExplorarSX tem como missão liderar avanços significativos na pesquisa espacial e no desenvolvimento de tecnologias inovadoras.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg" id="exploracao">
+    <div class="container ">
+      <h3 class="d-flex align-items-center justify-content-center subtittle fw-bold ">alguma de nossas Explorações</h3>
+
+      <div class="row">
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/cards/hubble.png" class="card-img-top" alt="hubble">
+            <div class="card-body">
+              <p class="card-text">Foto em Alta qualidade tirada do nosso satélite de exploraçao Hubble</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/cards/marte.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Bela captura pela pelo nosso Telescópio <strong>LuminarScope</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/cards/spaceX.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Capsula tripulada da <a href="https://www.spacex.com/">SpaceX</a> capturada pelo <strong>LuminarScope</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/cards/venus.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Venus com uma aparência semelhante ao sol capturada pela equipe <strong>ExplorarX</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg" id="contato">
+    <form action="" class="container">
+      <div>
+        <label class="form-label" for="nome" id="nome">Nome</label>
+        <input class="form-control" type="text" id="nome" placeholder="Digite seu nome:">
+      </div>
+      <div>
+        <label class="form-label" for="email" id="email">email</label>
+        <input class="form-control" type="text" id="email" placeholder="Digite seu email:">
+      </div>
+
+      <div>
+        <label class="form-label" for="telefone" id="telefone">telefone</label>
+        <input class="form-control" type="text" id="telefone" placeholder="Digite seu telefone:">
+      </div>
+
+      <div class="form-check form-switch">
+        <label class="form-check-label " for="aceito termos">Aceito termos de uso</label>
+        <input class="form-check-input" type="checkbox" name="aceito-termos" id="aceito-termos">
+      </div>
+      <button type="button" class="btn btn-success">Success</button>
+
+    </form>
+  </section>
+
+  <footer class="bg">
+    <p>ExplorarX - Todos Direitos Reservados 2024</p>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
